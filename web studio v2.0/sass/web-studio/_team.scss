@@ -1,0 +1,91 @@
+@import "../utils/variables";
+
+.team
+{
+    background-color: $light-bg-color;
+
+    &__title-wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-content: stretch;
+    }
+
+    &__title
+    {
+        
+        padding-top: 94px;
+        padding-bottom: 50px;
+        left: 617px;
+        top: 966px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+
+    }
+
+    &__list
+    {
+        padding-bottom: 94px;
+        display: flex;
+        gap: 30px;
+        margin: 0px;
+        
+    }
+
+    &__member-item
+    {
+        background-color: $light-text-color;
+        width: 270px;
+        height: 428px;
+        box-shadow: 0px 2px 1px 0px #00000033;
+
+        box-shadow: 0px 1px 1px 0px #00000024;
+
+        box-shadow: 0px 1px 3px 0px #0000001F;
+
+        border-end-end-radius: 3px;
+
+
+    }
+
+    &__member-photo
+    {
+        height: 260px;
+        width: 270px;
+    }
+
+
+    &__member-name
+    {
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+        margin-bottom: 0px;
+    
+    }
+
+    &__member-job
+    {
+        margin-top: 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $info-text-color;
+
+    }
+
+
+}
+

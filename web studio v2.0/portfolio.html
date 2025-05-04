@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
@@ -13,18 +13,18 @@
 
     <header class="container header">
         
-        <a href="index.html" class="header-web-studio-logo"><span class="style-web-studio-logo">Web</span>Studio</a>
+        <a href="index.html" class="header-logo a"><span class="header-logo__text-part">Web</span>Studio</a>
 
-        <ul class="header-ul">
-            <li><a href="index.html" class="header-nav-a">Студія</a></li>
-            <li><a href="portfolio.html" class="header-nav-a">Портфоліо</a></li>
-            <li><a href="" class="header-nav-a">Контакти</a></li>
+        <ul class="nav">
+            <li><a href="index.html" class="nav__link a">Студія</a></li>
+            <li><a href="portfolio.html" class="nav__link a">Портфоліо</a></li>
+            <li><a href="" class="nav__link a">Контакти</a></li>
         </ul>
 
-        <ul class="header-ul-second">
+        <ul class="contact">
 
-            <li class="header-li-second">
-
+            <li class="contact-item">
+                
                 <div>
                     <svg class="header-svg" width="16px" height="12px"> 
                         <use href="./symbols.svg#email"></use>
@@ -32,11 +32,12 @@
                 </div>
 
                 <div>
-                    <a href="" class="header-nav-a">info@devstudio.com</a>
+                    <a href="" class="nav__link a">info@devstudio.com</a>
                 </div>
             </li>
 
-            <li class="header-li-second">
+            <li class="contact-item">
+
                 <div>
                     <svg class="header-svg" width="10px" height="16px"> 
                         <use href="./symbols.svg#phone"></use>
@@ -44,8 +45,9 @@
                 </div>
 
                 <div>
-                    <a href="" class="header-nav-a">+38 096 111 11 11</a>
+                    <a href="" class="nav__link a">+38 096 111 11 11</a>
                 </div>
+
             </li>
 
         </ul>
@@ -53,25 +55,28 @@
     </header>
     
      <main>
+
         <div class="container">
             <nav>
-                <ul class="main-button">
-                    <li><button class="portfolio-main-button">Усі</button></li>
-                    <li><button class="portfolio-main-button">Вебсайти</button></li>
-                    <li><button class="portfolio-main-button">Додатки</button></li>
-                    <li><button class="portfolio-main-button">Дизайн</button></li>
-                    <li><button class="portfolio-main-button">Маркетинг</button></li>
+                
+                <ul class="nav-button">
+                    <li><button class="nav-button__item">Усі</button></li>
+                    <li><button class="nav-button__item">Вебсайти</button></li>
+                    <li><button class="nav-button__item">Додатки</button></li>
+                    <li><button class="nav-button__item">Дизайн</button></li>
+                    <li><button class="nav-button__item">Маркетинг</button></li>
                 </ul>
+                
             </nav>
 
-            <ul class="main-ul">
+            <ul class="scase">
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -79,18 +84,18 @@
                     </div>
 
                     <img src="./photoall/pc.jpg" alt="pc">
-                    <h2 class="portfolio-main-h2">Технокряк</h2>
-                    <p class="portfolio-main-p">Веб-сайт</p>
+                    <h2 class="scase__title">Технокряк</h2>
+                    <p class="scase__category">Веб-сайт</p>
 
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
+                        <div class="scase__overlay-inner">
 
-                            <p class="overlay-text">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -98,16 +103,16 @@
                     </div>
 
                     <img src="./photoall/basketball.jpg" alt="basketball">
-                    <h2 class="portfolio-main-h2">Постер New Orlean vs Golden Star</h2>
-                    <p class="portfolio-main-p">Дизайн</p>
+                    <h2 class="scase__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="scase__category">Дизайн</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -115,32 +120,32 @@
                     </div>
 
                     <img src="./photoall/seafood.jpg" alt="seafood">
-                    <h2 class="portfolio-main-h2">Ресторан Seafood</h2>
-                    <p class="portfolio-main-p">Додаток</p>
+                    <h2 class="scase__title">Ресторан Seafood</h2>
+                    <p class="scase__category">Додаток</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
                     </div>
 
                     <img src="./photoall/headphones.jpg" alt="headphones">
-                    <h2 class="portfolio-main-h2">Проєкт Prime</h2>
-                    <p class="portfolio-main-p">Маркетинг</p>
+                    <h2 class="scase__title">Проєкт Prime</h2>
+                    <p class="scase__category">Маркетинг</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -148,16 +153,16 @@
                     </div>
                     
                     <img src="./photoall/boxes.jpg" alt="boxes">
-                    <h2 class="portfolio-main-h2">Проєкт boxes</h2>
-                    <p class="portfolio-main-p">Додаток</p>
+                    <h2 class="scase__title">Проєкт boxes</h2>
+                    <p class="scase__category">Додаток</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -165,16 +170,16 @@
                     </div>
 
                     <img src="./photoall/monitor.jpg" alt="monitor">
-                    <h2 class="portfolio-main-h2">Inspiration has no Borders</h2>
-                    <p class="portfolio-main-p">Веб-сайт</p>
+                    <h2 class="scase__title">Inspiration has no Borders</h2>
+                    <p class="scase__category">Веб-сайт</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -183,32 +188,32 @@
 
 
                     <img src="./photoall/book.jpg" alt="book">
-                    <h2 class="portfolio-main-h2">Видання Limited Edition</h2>
-                    <p class="portfolio-main-p">Дизайн</p>
+                    <h2 class="scase__title">Видання Limited Edition</h2>
+                    <p class="scase__category">Дизайн</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
                     </div>
 
                     <img src="./photoall/tag.jpg" alt="tag">
-                    <h2 class="portfolio-main-h2">Проєкт LAB</h2>
-                    <p class="portfolio-main-p">Маркетинг</p>
+                    <h2 class="scase__title">Проєкт LAB</h2>
+                    <p class="scase__category">Маркетинг</p>
                 </li>
 
-                <li class="item">
+                <li class="scase__item">
 
-                    <div class="overlay-div-box">
+                    <div class="scase__item-overlay">
 
-                        <div class="overlay-div">
-                            <p class="overlay-text">
+                        <div class="scase__overlay-inner">
+                            <p class="scase__overlay-text">
                                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                             </p>
                         </div>
@@ -216,60 +221,60 @@
                     </div>
 
                     <img src="./photoall/workpc.jpg" alt="workpc">
-                    <h2 class="portfolio-main-h2">Growing Business</h2>
-                    <p class="portfolio-main-p">Додаток</p>
+                    <h2 class="scase__title">Growing Business</h2>
+                    <p class="scase__category">Додаток</p>
                 </li>
             </ul>
         </div>
         
      </main>
-
-     <footer class="gray-color-footer">
+ <footer class="footer">
 
         <div class="container">
 
-            <div class="footer-all-content">
+            <div class="footer__wrapper">
 
-                <div class="footer-text"> 
+                <div class="footer__contact-info"> 
 
-                    <a href="" class="footer-a"><span class="style-web-studio-logo">Web</span>Studio</a>
-              
-                    <p class="footer-p">м.Київ, пр-т Лесі Українки, 26</p>
+                    <a href="" class="footer__logo "><span class="footer-logo__text-part">Web</span>Studio</a>
+            
+                    <p class="footer__text-addres">м.Київ, пр-т Лесі Українки, 26</p>
 
                     <address>
-                        <a href="mailto:info@devstudio.com" class="footer-a-style">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="footer__contact-link" >info@devstudio.com</a>
                         <br>
                         <br>
-                        <a href="tel:0961111111" class="footer-a-style"> +38 096 111 11 11</a>
+                        <a href="tel:0961111111" class="footer__contact-link "> +38 096 111 11 11</a>
                     </address>
+                    
                 </div>
 
-                <div class="social-links">
+                <div>
 
-                    <h3 class="join-title" >ПРИЄДНУЙТЕСЬ</h3>
+                    <h3 class="footer__join-title" >ПРИЄДНУЙТЕСЬ</h3>
 
                     <div class="svg-box">
 
-                        <div class="svg-decor footer-svg">
-                            <svg class="footer-logo" width="20px" height="20px"> 
+                        <div class="svg-decor footer__svg">
+                            <svg class="footer__svg-logo" width="20px" height="20px"> 
                                 <use href="./symbols.svg#instagram-logo"></use>
                             </svg>
                         </div>
 
-                        <div class="svg-decor footer-svg">
-                            <svg class="footer-logo" width="20px" height="20px"> 
+                        <div class="svg-decor footer__svg">
+                            <svg class="footer__svg-logo" width="20px" height="20px"> 
                                 <use href="./symbols.svg#twitter-logo"></use>
                             </svg>
                         </div>
 
-                        <div class="svg-decor footer-svg">
-                            <svg class="footer-logo" width="20px" height="20px"> 
+                        <div class="svg-decor footer__svg">
+                            <svg class="footer__svg-logo" width="20px" height="20px"> 
                                 <use href="./symbols.svg#facebook-logo"></use>
                             </svg>
                         </div>
 
-                        <div class="svg-decor footer-svg">
-                            <svg class="footer-logo" width="20px" height="20px"> 
+                        <div class="svg-decor footer__svg">
+                            <svg class="footer__svg-logo" width="20px" height="20px"> 
                                 <use href="./symbols.svg#in-logo"></use>
                             </svg>
                         </div>
@@ -278,17 +283,17 @@
 
                 </div>
 
-                <div class="footer-form-div">
+                <div class="footer__form-wrapper">
 
-                    <h2 class="footer-h2">Підпишіться на розсилку</h2>
+                    <h2 class="footer__form-title">Підпишіться на розсилку</h2>
 
-                    <div class="form-div">
+                    <div class="footer__form">
 
                         <form action=""> 
                             <input class="footer-input" aria-required="true" type="email" id="email" name="email" placeholder="E-mail">
                         </form>
 
-                        <button class="footer-btn-follow">
+                        <button class="footer__btn-follow">
                             
                             Підписатися 
 
@@ -307,7 +312,7 @@
         </div>
         
     </footer>
-     
+
     
 </body>
 </html>

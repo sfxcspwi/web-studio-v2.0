@@ -1,0 +1,87 @@
+@import "../utils/variables";
+
+.adv
+{
+    padding-top: 94px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    &__grid-text
+    {
+
+        width: 270px;
+        height: 50px;
+        left: 215px;
+        top: 800px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $info-text-color;
+
+    }
+
+    &__grid-details::before
+    {
+        content:url(/photo/antenna.png);
+        width: 270px;
+        height: 120px;
+        background-color: $light-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__grid-punctuality::before
+    {
+        content:url(/photo/clock.png);
+        width: 270px;
+        height: 120px;
+        background-color:$light-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__grid-planning::before
+    {
+        content:url(/photo/diagram.png);
+        width: 270px;
+        height: 120px;
+        background-color: $light-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__grid-tech::before
+    {
+        content:url(/photo/astronaut.png);
+        width: 270px;
+        height: 120px;
+        background-color: $light-bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__title
+    {
+
+        width: 270px;
+        height: 16px;
+        left: 215px;
+        top: 774px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-text-color;
+    }
+}

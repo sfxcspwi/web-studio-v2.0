@@ -1,0 +1,171 @@
+@import "./utils/header";
+@import "./utils/footer";
+@import "./utils/variables";
+@import "./web-studio/hero";
+@import "./web-studio/advantages";
+@import "./web-studio/about";
+@import "./web-studio/team";
+@import "./web-studio/clients";
+@import "./portfolio/showcase";
+
+.container
+{
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.svg-decor
+{
+    width: 44px; 
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.svg-decor:hover
+{
+    
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: svg-anim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes svg-anim 
+{
+    from 
+    {
+      scale: 1;
+      background-color: transparent;
+    }
+
+    to 
+    {
+      background-color: $decor-color;
+      scale: 1.1;
+      color: $light-text-color;
+    }
+}
+
+@keyframes svg-anim-l
+{
+    from 
+    {
+        scale: 1;
+    }
+
+    to 
+    {
+        scale: 1.1;
+        color: $light-text-color;
+    }
+}
+
+
+
+.svg-decor:hover .svg-logo
+{
+    animation-name: svg-anim-l;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+}
+
+.svg-logo
+{
+    color: $decor-svg-color;
+    fill: transparent;
+}
+
+.svg-box
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+
+
+.page-home .nav__link[href="index.html"]::after
+{
+    content: "";
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $decor-color;
+    margin-top: 28px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: appear 0.5s ease forwards;
+}
+
+.page-home .nav__link[href="index.html"]
+{
+    color: $decor-color;
+}
+
+.page-portfolio .nav__link[href="portfolio.html"]
+{
+    color:$decor-color;
+}
+
+
+.page-portfolio .nav__link[href="portfolio.html"]::after 
+{
+   content: "";
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $decor-color;
+    margin-top: 28px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: appear 0.5s ease forwards;
+}
+
+.a
+{
+    text-decoration: none;
+    color:$main-text-color;
+}
+
+@keyframes appear {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 48px;
+        opacity: 1;
+    }
+}
+
+
+
+body
+{
+    font-family: "Roboto";
+}
+
+ul
+{
+    list-style-type: none;
+    padding-left: 0px;
+}

@@ -1,0 +1,50 @@
+@import "../utils/variables";
+
+.clients
+{
+    &__title
+    {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: 3%;
+        text-align: center;
+        margin-top: 94px;
+        margin-bottom: 50px;
+    }
+
+
+    &__list
+    {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 94px;
+    }
+
+    &:hover
+    {
+        animation-name: customer-anim;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+
+@keyframes customer-anim 
+{
+    from 
+    {
+      scale: 1;    
+      color: $decor-svg-color;
+    }
+
+    to 
+    {
+      scale: 1.1;
+      color: $decor-color;
+    }
+}
+

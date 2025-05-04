@@ -1,0 +1,321 @@
+@import"../utils/variables";
+
+
+.hero
+{
+    background-color: $dark-bg-color;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/photo/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title
+    {
+        padding-top: 200px;
+        padding-bottom: 30px;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $light-text-color;
+        margin: 0px;
+    }
+    
+    &__button
+    {
+        border: 0px;
+        margin-left: 492px;
+        margin-right: 492px;
+        margin-top: 30px;
+        margin-bottom: 200px;
+        width: 152px;
+        height: 30px;
+        left: 724px;
+        top: 440px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $light-text-color;
+
+
+        width: 216px;
+        height: 50px;
+        left: 692px;
+        top: 430px;
+        background: $decor-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+}
+
+.modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+
+    background-color: $light-text-color;
+    box-shadow: 0px 2px 1px 0px #00000033;
+
+    box-shadow: 0px 1px 1px 0px #00000024;
+
+    box-shadow: 0px 1px 3px 0px #0000001F;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    animation-name: modal-open;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+
+    &__label
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        color: $info-text-color;
+        display: inline-block;
+        width: 448px;
+    }
+
+    &__title
+    {
+        text-align: center;
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 3%;
+        color: $main-text-color;
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+
+    &__wrapper
+    {
+        width: 528px;
+        height: 342px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    &__form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    &__form-wrapper
+    {
+        width: 448px;
+        height: 342px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__input
+    {
+        width: 403px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid #21212133;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 42px;
+        margin-top: 6px;
+    }
+
+    &__input:focus {
+        outline: none;
+        border-color: $decor-color; 
+    }
+    
+    &__label:nth-of-type(1) svg 
+    {
+        top: 104px;
+    }
+    
+    &__label:nth-of-type(2) svg 
+    {
+       top: 175px;
+    }
+
+    &__textarea
+    {
+        width: 429px;
+        height: 115px;
+        resize: none;
+        padding-left: 16px;
+        padding-top: 5px;
+    }
+
+    &__button-submit
+    {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 6%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px 52px 10px 52px;
+        box-shadow: 0px 4px 4px 0px #00000026;
+        border-radius: 4px;
+        border: 0px;
+        color: $light-text-color;
+        margin-top: 20px;
+        background-color: $decor-color;
+    }
+
+    &__button-submit:hover
+    {
+        background-color: #188CE8;
+        box-shadow: 0px 6px 6px 0px #00000026;
+    }
+
+    &__textarea::placeholder
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        color: #75757580;
+        display: inline-block;
+        padding-top: 12px;
+        padding-left: 0px;
+    }
+    
+    &__close-wrapper
+    {
+        display: flex;
+        justify-content: right;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    
+        &__label:nth-of-type(3) svg 
+    {
+        top: 246px;
+    }
+
+    &__label:focus-within svg {
+        color: $decor-color;
+    }
+
+    &__terms-label
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__terms-check
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 3%;
+        color: $info-text-color;
+    }
+
+    &__terms-link
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        color: $decor-color;
+
+    }
+}
+
+
+.back-drop .modal.show
+{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
+@keyframes modal-open 
+{
+    from {
+      transform: translate(-50%, 100%); 
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+}
+
+.btn-close
+{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $light-text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover
+    {
+        color: $decor-color;
+    }
+    
+}
+
+
+
+.form__icon
+{
+    position: absolute;
+    left: 53px;
+    z-index: 1;
+    color: $main-text-color;
+}
+
+.is-hidden
+{
+    display: none;
+    pointer-events: none;
+}
+
+.back-drop
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:  #00000033;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+
+}
+

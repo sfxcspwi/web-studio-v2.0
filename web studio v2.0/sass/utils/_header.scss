@@ -1,0 +1,86 @@
+@import "./variables";
+
+.header
+{
+    display: flex;
+    background-color: $light-text-color;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &-logo
+    {
+        font-family: "Raleway";
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+     
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &-logo__text-part
+    {
+        color: $decor-color;
+    }
+}
+
+  
+
+.nav
+{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+
+    & li
+    {
+        width: 75px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link:hover
+    {
+        color: $decor-color;
+    }
+
+    &__link
+    {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        width: 100%;
+        height: 16px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-wrap: nowrap;
+        text-align: center;
+    }
+}
+
+
+.contact
+{
+    display: flex;
+    gap: 30px;
+
+    &-item
+    {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-item:hover
+    {
+        color: $decor-color;
+    }
+}
