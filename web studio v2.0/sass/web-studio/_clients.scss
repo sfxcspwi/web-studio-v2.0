@@ -1,17 +1,13 @@
 @import "../utils/variables";
+@import "../utils/placeholder";
 
 .clients
 {
     &__title
     {
-        font-family: "Roboto";
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 100%;
-        letter-spacing: 3%;
-        text-align: center;
-        margin-top: 94px;
-        margin-bottom: 50px;
+
+        @extend %title;
+
     }
 
 

@@ -1,0 +1,19 @@
+@mixin footer-text($color) 
+{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $color;
+}
+
+@mixin text-block($size, $line, $color) 
+{
+  font-style: normal;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: 0.03em;
+  color: $color;
+}

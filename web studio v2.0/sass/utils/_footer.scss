@@ -1,5 +1,5 @@
 @import "./variables";
-
+@import "./mixins";
 
 .footer
 {
@@ -7,25 +7,13 @@
 
         &__form-title
     {
-        font-family: "Roboto";
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        letter-spacing: 3%;
-        text-transform: uppercase;
-        color: $light-text-color;
+        @extend %info-title;
         margin: 0px 0px 20px 0px;
-
     }
 
     &__join-title
     {
-        font-family: "Roboto";
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        letter-spacing: 3%;
-        color:$light-text-color;
+        @extend %info-title;
         text-align: center;
         margin-top: 0px;
     }
@@ -104,37 +92,25 @@
         text-decoration: none;
     }
 
-    &__text-addres
+    &__text-addres 
     {
-    
+        @include footer-text($light-text-color);
         width: 231px;
         height: 21px;
         left: 215px;
         top: 2205px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: $light-text-color;
     }
 
-    &__contact-link
+    &__contact-link 
     {
-        
+        @include footer-text($meta-text-color);
         width: 136px;
         height: 21px;
         left: 215px;
         top: 2235px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: $meta-text-color;
         text-decoration: none;
     }
-
+    
     &__contact-info
     {
         padding-bottom: 60px;

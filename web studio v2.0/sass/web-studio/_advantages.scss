@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
 .adv
 {
@@ -9,18 +10,11 @@
 
     &__grid-text
     {
-
+        @include text-block(14px, 24px, $info-text-color);
         width: 270px;
         height: 50px;
         left: 215px;
         top: 800px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: $info-text-color;
-
     }
 
     &__grid-details::before

@@ -66,22 +66,9 @@
   background-color: #2F303A;
 }
 .footer__form-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 3%;
-  text-transform: uppercase;
-  color: #ffffff;
   margin: 0px 0px 20px 0px;
 }
 .footer__join-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 3%;
-  color: #ffffff;
   text-align: center;
   margin-top: 0px;
 }
@@ -147,28 +134,28 @@
   text-decoration: none;
 }
 .footer__text-addres {
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 2205px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-.footer__contact-link {
-  width: 136px;
+  width: 231px;
   height: 21px;
   left: 215px;
-  top: 2235px;
+  top: 2205px;
+}
+.footer__contact-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 136px;
+  height: 21px;
+  left: 215px;
+  top: 2235px;
   text-decoration: none;
 }
 .footer__contact-info {
@@ -463,16 +450,16 @@
   justify-content: space-between;
 }
 .adv__grid-text {
-  width: 270px;
-  height: 50px;
-  left: 215px;
-  top: 800px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 270px;
+  height: 50px;
+  left: 215px;
+  top: 800px;
 }
 .adv__grid-details::before {
   content: url(/photo/antenna.png);
@@ -528,12 +515,7 @@
   color: #212121;
 }
 
-.about__title-wrapper {
-  display: flex;
-  justify-content: center;
-  align-content: stretch;
-}
-.about__title {
+.clients__title, .team__title, .about__title {
   padding-top: 94px;
   padding-bottom: 50px;
   left: 617px;
@@ -544,6 +526,23 @@
   line-height: 42px;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
+}
+
+.about-photo__text, .footer__form-title, .footer__join-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.about__title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
 }
 .about-photo__list {
   padding-inline-start: 0px;
@@ -561,7 +560,21 @@
   position: relative;
   top: -74px;
 }
-.about-photo__text {
+.clients__title, .team__title, .about__title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  left: 617px;
+  top: 966px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+
+.footer__form-title, .footer__join-title, .about-photo__text {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -578,18 +591,6 @@
   display: flex;
   justify-content: center;
   align-content: stretch;
-}
-.team__title {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  left: 617px;
-  top: 966px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 .team__list {
   padding-bottom: 94px;
@@ -631,16 +632,30 @@
   color: #757575;
 }
 
-.clients__title {
-  font-family: "Roboto";
+.clients__title, .about__title, .team__title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  left: 617px;
+  top: 966px;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+
+.footer__form-title, .footer__join-title, .about-photo__text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 3%;
-  text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
+
 .clients__list {
   display: flex;
   gap: 30px;
@@ -728,16 +743,16 @@
   padding-left: 24px;
 }
 .scase__category {
-  width: 322px;
-  height: 30px;
-  left: 239px;
-  top: 616px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+  width: 322px;
+  height: 30px;
+  left: 239px;
+  top: 616px;
   padding-left: 24px;
 }
 .scase__overlay-inner {
