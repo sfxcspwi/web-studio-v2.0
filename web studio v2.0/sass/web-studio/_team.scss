@@ -40,7 +40,9 @@
         box-shadow: 0px 1px 3px 0px #0000001F;
 
         border-end-end-radius: 3px;
-
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
     }
 
@@ -81,3 +83,25 @@
 
 }
 
+@media (min-width: 768px) and (max-width: 1200px)
+{ 
+    .team__list
+    {
+        flex-wrap: wrap;
+    }
+
+    .team__member-item
+    {
+        flex-basis: calc((100% - 60px) / 2 );
+        width: 354px;
+        height: 536px;
+        
+    }
+
+    .team__member-photo
+    {
+        width: 354px;
+        height: 374px;
+
+    }
+}

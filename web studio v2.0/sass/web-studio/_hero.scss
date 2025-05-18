@@ -27,11 +27,15 @@
         margin: 0px;
     }
     
+    &__wrap-btn
+    {
+        display: flex;
+        justify-content: center;
+    }
+
     &__button
     {
         border: 0px;
-        margin-left: 492px;
-        margin-right: 492px;
         margin-top: 30px;
         margin-bottom: 200px;
         width: 152px;
@@ -213,7 +217,7 @@
         margin-right: 8px;
     }
     
-        &__label:nth-of-type(3) svg 
+    &__label:nth-of-type(3) svg 
     {
         top: 246px;
     }
@@ -291,8 +295,6 @@
     
 }
 
-
-
 .form__icon
 {
     position: absolute;
@@ -319,3 +321,56 @@
 
 }
 
+@media (min-width: 768px) and (max-width: 1200px)
+{ 
+    .modal
+    {
+        width: 450px;
+        height: 609px;
+    }
+
+    .modal__input
+    {
+        width: 370px;
+    }
+
+    .modal__label
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 370px;
+    }
+
+    .modal__title
+    {
+        display: block;
+        width: 370px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+
+    .modal__wrapper
+    {
+        width: 100%;
+        height: 370px;
+    }
+
+    .modal__label:nth-of-type(1) svg 
+    {
+        top: 145px;
+    }
+    
+    .modal__label:nth-of-type(2) svg 
+    {
+       top: 217px;
+    }
+
+    .modal__label:nth-of-type(3) svg 
+    {
+        top: 289px;
+    }
+
+}

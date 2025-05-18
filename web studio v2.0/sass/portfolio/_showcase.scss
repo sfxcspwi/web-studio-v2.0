@@ -76,109 +76,134 @@
     margin-top: 50px;
 
     &__title
-{
+    {
 
-    width: 322px;
-    height: 36px;
-    left: 639px;
-    top: 576px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: $main-text-color;
-    display: flex;
-    padding-left: 24px;
+        width: 322px;
+        height: 36px;
+        left: 639px;
+        top: 576px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: $main-text-color;
+        display: flex;
+        padding-left: 24px;
+        
+
+    }
+
+    &__category 
+    {
+        @include text-block(16px, 30px, $info-text-color);
+        width: 322px;
+        height: 30px;
+        left: 239px;
+        top: 616px;
+        padding-left: 24px;
+    }
+
+    &__overlay-inner
+    {
+        width: 370px;
+        height: 294px;
+        background-color:#2196F3E5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    &__item
+    {
+        flex-basis: calc((100% - 60px) / 3 );
+
+        box-shadow: 1px 4px 6px 0px #00000029;
+
+        box-shadow: 0px 4px 4px 0px #0000000F;
+
+        box-shadow: 0px 1px 1px 0px #0000001F;
+        
+        position: relative;
+
+    }
+
+    &__item:hover
+    {
+    box-shadow: 2px 6px 8px 0px #00000029;
+
+        box-shadow: 0px 6px 6px 0px #0000000F;
+
+        box-shadow: 0px 2px 2px 0px #0000001F;
+
+
+    }
+
+    &__item-overlay:hover &__overlay-inner
+    {
+        animation-name: overlay-portfolio;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+    }
+
+    &__item-overlay
+    {
+        position: absolute; 
+        overflow: hidden;   
+        width: 370px;
+        height: 294px;
+        top: 41.75%;
+        left: 50%;
+        transform: translate(-50%, -58.25%);
+    }
+
+
+    &__overlay-text
+    {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 3%;
+        color: $light-text-color;
+        width: 322px;
+        height: 168px;
+        pointer-events: none;
+    }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px)
+{ 
+    .scase__item
+    {
+        flex-basis: calc((100% - 30px) / 2 );
+        
+        width: 354px;
+        height: 440px;
+
+    }
     
+    .scase__item img 
+    {
+        width: 100%;
+    }
 
+    .scase__item-overlay
+    {
+        width: 354px;
+        height: 281px;
+        top: 39%;
+        transform: translate(-50%, -61%);
+    }
 }
 
-&__category 
-{
-    @include text-block(16px, 30px, $info-text-color);
-    width: 322px;
-    height: 30px;
-    left: 239px;
-    top: 616px;
-    padding-left: 24px;
-}
-
-&__overlay-inner
-{
-    width: 370px;
-    height: 294px;
-    background-color:#2196F3E5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-&__item
-{
-    flex-basis: calc((100% - 60px) / 3 );
-
-    box-shadow: 1px 4px 6px 0px #00000029;
-
-    box-shadow: 0px 4px 4px 0px #0000000F;
-
-    box-shadow: 0px 1px 1px 0px #0000001F;
-    
-    position: relative;
-
-}
-
-&__item:hover
-{
-   box-shadow: 2px 6px 8px 0px #00000029;
-
-    box-shadow: 0px 6px 6px 0px #0000000F;
-
-    box-shadow: 0px 2px 2px 0px #0000001F;
-
-
-}
-
-&__item-overlay:hover &__overlay-inner
-{
-    animation-name: overlay-portfolio;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
-}
-
-&__item-overlay
-{
-    position: absolute; 
-    overflow: hidden;   
-    width: 370px;
-    height: 294px;
-    top: 41.75%;
-    left: 50%;
-    transform: translate(-50%, -58.25%);
-}
-
-
-&__overlay-text
-{
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 3%;
-    color: $light-text-color;
-    width: 322px;
-    height: 168px;
-    pointer-events: none;
-}
-
-
-
-
-}
 

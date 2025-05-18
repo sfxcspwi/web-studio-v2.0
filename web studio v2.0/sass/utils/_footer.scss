@@ -3,6 +3,7 @@
 
 .footer
 {
+
     background-color: $dark-bg-color;
 
         &__form-title
@@ -133,7 +134,7 @@
         color: $light-text-color;
     }
 
-        &__form
+    &__form
     {
         display: flex;
         gap: 12px;
@@ -141,4 +142,36 @@
 
 }
 
+
+@media (min-width: 768px) and (max-width: 1200px)
+{ 
+    .footer
+    {
+        height: 463px;
+    }
+
+    .footer__wrapper
+    {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer__contact-info
+    {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .footer__form-wrapper
+    {
+        justify-content: center;
+    }
+
+    .footer__form
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+}
 

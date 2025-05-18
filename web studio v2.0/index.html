@@ -60,13 +60,17 @@
             <section class="hero"> 
                 <div class="container">
                     <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ </h1>
-                    <button class="hero__button btn-open" data-modal-open>Замовити послугу</button>
+
+                    <div class="hero__wrap-btn">
+                        <button class="hero__button btn-open" data-modal-open>Замовити послугу</button>
+                    </div>
 
                     <div class="back-drop is-hidden" data-modal>
 
                         <div class="modal">
 
                             <div>
+                                
                                 <div class="modal__close-wrapper">
                                     <button class="btn-close" data-modal-close> &#x2716;</button>
                                 </div>
@@ -143,16 +147,16 @@
 
                 <div class="container">
                     <ul class="adv">
-                        <li class="adv__grid-details"><h4 class="adv__title">Увага до деталей</h4>
+                        <li class="adv__grid adv__grid-details"><h4 class="adv__title">Увага до деталей</h4>
                         <p class="adv__grid-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
             
-                        <li class="adv__grid-punctuality"><h4 class="adv__title">Пунктуальність</h4>
+                        <li class="adv__grid adv__grid-punctuality"><h4 class="adv__title">Пунктуальність</h4>
                         <p class="adv__grid-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
                     
-                        <li class="adv__grid-planning"><h4 class="adv__title">Планування</h4>
+                        <li class="adv__grid adv__grid-planning"><h4 class="adv__title">Планування</h4>
                         <p class="adv__grid-text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
                 
-                        <li class="adv__grid-tech"><h4 class="adv__title">Сучасні технології</h4>
+                        <li class="adv__grid adv__grid-tech"><h4 class="adv__title">Сучасні технології</h4>
                         <p class="adv__grid-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
                     </ul>
                 </div>
@@ -196,10 +200,12 @@
 
                         <li class="team__member-item">
 
-                            <img class="team__member-photo" src="./photo/Igor.jpg" alt="Ігор">
-                            <h4 class="team__member-name">Ігор Дем'яненко</h4>
-                            <br>
-                            <p class="team__member-job">Product Designer</p>
+                            <div>
+                                <img class="team__member-photo" src="./photo/Igor.jpg" alt="Ігор">
+                                <h4 class="team__member-name">Ігор Дем'яненко</h4>
+                                <br>
+                                <p class="team__member-job">Product Designer</p>
+                            </div>
 
                             <div class="svg-box">
 
@@ -232,11 +238,13 @@
                         </li>
 
                         <li class="team__member-item">
-                            <img class="team__member-photo" src="./photo/Olga.jpg" alt="Ольга">
-                            <h4 class="team__member-name">Ольга Рєпіна</h4>
-                            <br>
-                            <p class="team__member-job">Frontend Developer</p>
-
+                            <div>
+                                <img class="team__member-photo" src="./photo/Olga.jpg" alt="Ольга">
+                                <h4 class="team__member-name">Ольга Рєпіна</h4>
+                                <br>
+                                <p class="team__member-job">Frontend Developer</p>
+                            </div>
+                            
                             <div class="svg-box">
 
                                 <div class="svg-decor">
@@ -267,11 +275,13 @@
                         </li>
 
                         <li class="team__member-item">
-                            <img class="team__member-photo" src="./photo/Mykola.jpg" alt="Микола">
-                            <h4 class="team__member-name">Микола Тарасов</h4>
-                            <br>
-                            <p class="team__member-job">Marketing</p>
-
+                            <div>
+                                <img class="team__member-photo" src="./photo/Mykola.jpg" alt="Микола">
+                                <h4 class="team__member-name">Микола Тарасов</h4>
+                                <br>
+                                <p class="team__member-job">Marketing</p>
+                            </div>
+                            
                             <div class="svg-box">
 
                                 <div class="svg-decor">
@@ -302,10 +312,13 @@
                         </li>
 
                         <li class="team__member-item">
-                            <img class="team__member-photo" src="./photo/Myhailo.jpg" alt="Михайло">
-                            <h4 class="team__member-name">Михайло Єрмаков</h4>
-                            <br>
-                            <p class="team__member-job">UI Designer</p>
+                            
+                            <div>
+                                <img class="team__member-photo" src="./photo/Myhailo.jpg" alt="Михайло">
+                                <h4 class="team__member-name">Михайло Єрмаков</h4>
+                                <br>
+                                <p class="team__member-job">UI Designer</p>
+                            </div>
 
                             <div class="svg-box">
 
@@ -346,38 +359,38 @@
 
                     <ul class="clients__list">
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#ya-co-customer"></use>
                             </svg>
                         </li>
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#tagline-customer"></use>
                             </svg>
                         </li>
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#company-customer"></use>
                             </svg>
                         </li>
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#foster-customer"></use>
                             </svg>
                         </li>
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#brand-customer"></use>
                             </svg>
                         </li>
 
-                        <li>
-                            <svg class="clients svg-logo" width="172px" height="92px"> 
+                        <li class="clients__list-item">
+                            <svg class="clients svg-logo"> 
                                 <use href="./symbols.svg#last-customer"></use>
                             </svg>
                         </li>
