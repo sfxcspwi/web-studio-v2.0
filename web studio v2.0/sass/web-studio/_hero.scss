@@ -7,6 +7,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/photo/background.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
     &__title
     {
@@ -318,10 +319,65 @@
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
+    z-index: 110;
 
 }
 
 @media (min-width: 768px) and (max-width: 1200px)
+{ 
+    .modal
+    {
+        width: 450px;
+        height: 609px;
+    }
+
+    .modal__input
+    {
+        width: 370px;
+    }
+
+    .modal__label
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 370px;
+    }
+
+    .modal__title
+    {
+        display: block;
+        width: 370px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+
+    .modal__wrapper
+    {
+        width: 100%;
+        height: 370px;
+    }
+
+    .modal__label:nth-of-type(1) svg 
+    {
+        top: 145px;
+    }
+    
+    .modal__label:nth-of-type(2) svg 
+    {
+       top: 217px;
+    }
+
+    .modal__label:nth-of-type(3) svg 
+    {
+        top: 289px;
+    }
+
+}
+
+@media (max-width: 768px)
 { 
     .modal
     {

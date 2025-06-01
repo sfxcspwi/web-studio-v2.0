@@ -113,6 +113,16 @@
     animation: appear 0.5s ease forwards;
 }
 
+.page-home .menu__item[href="index.html"]
+{
+    color: $decor-color;
+}
+
+.page-portfolio .menu__item[href="portfolio.html"]
+{
+    color:$decor-color;
+}
+
 .page-home .nav__link[href="index.html"]
 {
     color: $decor-color;
@@ -183,3 +193,11 @@ ul
         width: 210px;
     }
 } 
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        max-width: 450px;
+    }
+}

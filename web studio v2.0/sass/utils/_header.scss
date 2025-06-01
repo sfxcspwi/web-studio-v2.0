@@ -30,7 +30,15 @@
     }
 }
 
-  
+.hamburger-btn
+{
+    display: none;
+}
+
+.menu-overlay
+{
+    display: none;
+}
 
 .nav
 {
@@ -85,6 +93,8 @@
     }
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1200px)
 { 
     .contact
@@ -105,3 +115,173 @@
         padding-bottom: 0;
     }
 }
+
+@media (max-width: 768px)
+{ 
+    .hamburger-line 
+    {
+        width: 24px;
+        height: 2.666666030883789px;
+        background-color: $main-text-color;
+        transition: all 0.3s ease;
+        margin-bottom: 4px;
+    }
+
+    button.hamburger-btn div:nth-child(3) 
+    {
+        margin-bottom: 0px;
+    }
+
+    .hamburger-btn
+    {
+        background-color: transparent;
+        border: 0px;
+        display: inline-block;
+    }
+
+    .menu-overlay 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+        z-index: 100;
+        display: block;
+        background-color: $light-text-color;
+    }
+
+    .menu-overlay.active 
+    {
+        transform: translateX(0);
+    }
+
+    .header
+    {
+        position: relative;
+        z-index: 10;
+    }
+
+    .nav
+    {
+        display: none;
+    }
+
+    .menu-content
+    {
+        margin-top: 48px;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        width: 220px;
+    }
+
+    .contact
+    {
+        display: none;
+    }
+
+    .menu__item
+    {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        text-align: center;
+        color: $main-text-color;
+
+    }
+
+    .close-btn
+    {
+        background-color: transparent;
+        border: 0px;
+        width: 40px;
+        height: 40px;
+        color: $main-text-color;
+        font-size: 32px;
+        font-weight: 900;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .close-btn:hover
+    {
+        color: $decor-color;
+    }
+
+    .menu-contact
+    {
+        margin-top: 302px;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        gap: 32px;
+    }
+
+    .menu-contact__item
+    {
+        width: 300px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .item__email
+    {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: $info-text-color;
+        text-decoration: none;
+    }
+
+    .item__number
+    {
+        text-decoration: none;
+        color: $decor-color;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 100%;
+        letter-spacing: 2%;
+    }
+
+    .menu-social
+    {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 64px;
+    }
+
+    .social__links
+    {
+        color: $decor-color;
+        text-decoration: none;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 2%;
+
+    }
+
+    .menu-social__item
+    {
+        border-right: 1px solid #21212133;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .menu-social li:last-child 
+    {
+        border-right: none;
+    }
+}
+

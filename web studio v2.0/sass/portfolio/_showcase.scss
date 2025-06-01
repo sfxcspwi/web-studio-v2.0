@@ -6,6 +6,7 @@
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-top: 44px;
 
     &__item:hover
     {
@@ -45,7 +46,6 @@
         letter-spacing: 0.03em;
     
         color: $main-text-color;
-        margin-top: 44px;
     
     }
     
@@ -203,6 +203,46 @@
         height: 281px;
         top: 39%;
         transform: translate(-50%, -61%);
+    }
+}
+
+@media (max-width: 768px)
+{ 
+    .scase
+    {
+        justify-content: center;
+    }
+
+    .scase__item
+    {
+        flex-basis: auto;
+        width: 450px;
+        height: 404px;
+    }
+    
+    .scase__item img 
+    {
+        overflow: hidden;
+        width: 450px;
+        height: 294px;
+    }
+
+    .scase__item-overlay
+    {
+        width: 450px;
+        height: 294px;
+        top: 42%;
+        transform: translate(-50%, -57.5%);
+    }
+
+    .scase__overlay-inner
+    {
+        width: 450px;
+    }
+
+    .nav-button
+    {
+        flex-wrap: wrap;
     }
 }
 

@@ -49,6 +49,7 @@
 { 
     .clients__list
     {
+        display: flex;
         flex-wrap: wrap;
         margin-bottom: 60px;
     }
@@ -64,6 +65,38 @@
         width: 226px;
         height: 120px;
     }
+
+    .clients__title
+    {
+        padding-top: 60px;
+        margin-top: 0px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+@media (max-width: 768px)
+{ 
+    .clients__list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        gap: 30px;
+    }
+
+    .clients__list-item
+    {
+        flex-basis: calc((100% - 30px) / 2 );
+    }
+
+    .clients
+    {
+        width: 100%;
+        height: 120px;
+    }
+
 
     .clients__title
     {

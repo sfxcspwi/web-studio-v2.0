@@ -85,6 +85,7 @@
 { 
     .adv
     {
+        display: flex;
         flex-wrap: wrap;
         padding-top: 60px;
     }
@@ -120,6 +121,46 @@
     .adv__grid-tech::before
     {
         width: 354px;
+        height: 120px;
+    }
+}
+
+
+@media (max-width: 768px)
+{ 
+    .adv
+    {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        justify-content: center;
+    }
+
+    .adv__grid-text
+    {
+        width: 450px;
+        height: 50px;
+    }
+
+    .adv__grid-details::before
+    {
+        width: 450px;
+        height: 120px;
+    }
+
+    .adv__grid-punctuality::before
+    {
+        width: 450px;
+        height: 120px;
+    }
+    .adv__grid-planning::before
+    {
+        width: 450px;
+        height: 120px;
+    }
+    .adv__grid-tech::before
+    {
+        width: 450px;
         height: 120px;
     }
 }

@@ -148,10 +148,13 @@
     .footer
     {
         height: 463px;
+        display: flex;
+        justify-content: center;
     }
 
     .footer__wrapper
     {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -164,7 +167,48 @@
 
     .footer__form-wrapper
     {
+        display: flex;
         justify-content: center;
+        margin-left: 0px;
+    }
+
+    .footer__form
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px)
+{ 
+    .footer__wrapper
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer
+    {
+        height: 630px;
+    }
+
+    .footer__contact-info
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 60px;
+        width: 300px;
+    }
+
+    .footer__form-wrapper
+    {
+        justify-content: center;
+        margin-left: 0px;
     }
 
     .footer__form
@@ -173,5 +217,11 @@
         justify-content: center;
         padding-bottom: 60px;
     }
+
+    .footer__join-info
+    {
+        margin-bottom: 60px;
+    }
+ 
 }
 

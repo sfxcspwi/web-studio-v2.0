@@ -52,8 +52,14 @@
 
         </ul>
        
+        <button class="hamburger-btn" id="hamburgerBtn" onclick="openMenu()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
     </header>
-    
+
+<div id="mainPage">
      <main>
 
         <div class="container">
@@ -228,7 +234,7 @@
         </div>
         
      </main>
- <footer class="footer">
+    <footer class="footer">
 
         <div class="container">
 
@@ -249,7 +255,7 @@
                     
                 </div>
 
-                <div>
+                <div class="footer__join-info">
 
                     <h3 class="footer__join-title" >ПРИЄДНУЙТЕСЬ</h3>
 
@@ -312,7 +318,44 @@
         </div>
         
     </footer>
+</div>
 
+<div class="menu-overlay" id="menuOverlay">  
+        
+    <button class="close-btn" onclick="closeMenu()">✕</button>
+
+    <ul class="menu-content">
+        <li><a href="index.html" class="menu__item a">Студія</a></li>
+        <li><a href="portfolio.html" class="menu__item a">Портфоліо</a></li>
+        <li><a href="" class="menu__item a">Контакти</a></li>
+    </ul>
+
+    <ul class="menu-contact">
+
+        <li class="menu-contact__item">
+            <div>
+                <a href="" class="item__number ">+38 096 111 11 11</a>
+            </div>
+        </li>
+
+        <li class="menu-contact__item">
+            
+            <div>
+                <a href="" class="item__email ">info@devstudio.com</a>
+            </div>
+        </li>
+
+    </ul>
+
+    <ul class="menu-social">
+        <li class="menu-social__item"><a href="" class="social__links">Instagram</a></li>
+        <li class="menu-social__item"><a href="" class="social__links">Twitter</a></li>
+        <li class="menu-social__item"><a href="" class="social__links">Facebook</a></li>
+        <li class="menu-social__item"><a href="" class="social__links">Linkedin</a></li>
+    </ul>
+</div>
     
+<script src="./mobilemenu.js"></script>
+
 </body>
 </html>
