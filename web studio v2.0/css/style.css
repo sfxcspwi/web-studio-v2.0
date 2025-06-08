@@ -798,7 +798,6 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .adv {
-    display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
   }
@@ -829,7 +828,6 @@
 }
 @media (max-width: 768px) {
   .adv {
-    display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
     justify-content: center;
@@ -987,7 +985,6 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .team__list {
-    display: flex;
     flex-wrap: wrap;
   }
   .team__member-item {
@@ -1002,7 +999,6 @@
 }
 @media (max-width: 768px) {
   .team__list {
-    display: flex;
     flex-wrap: wrap;
   }
   .team__member-item {
@@ -1066,7 +1062,6 @@
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .clients__list {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
@@ -1085,7 +1080,6 @@
 }
 @media (max-width: 768px) {
   .clients__list {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 60px;
     gap: 30px;
